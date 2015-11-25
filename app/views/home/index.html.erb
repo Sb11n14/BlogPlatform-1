@@ -1,3 +1,11 @@
-<h1>Simple Blog Platform</h1>
-<%= link_to 'All Posts', controller: 'posts' %>
-<%= link_to 'New Post', new_post_path %>
+<div id="main-container" class="container">
+  <div class="row">
+    <div id="sidebar" class="col-xs-3">
+        <%= link_to 'All Posts', controller: 'posts' %>
+        <%= link_to 'New Post', new_post_path %>
+    </div>
+    <div id="content" class="col-xs-9">
+      <h1>Simple Blog Platform</h1>
+    </div>
+  </div>
+</div>
