@@ -1,11 +1,15 @@
-<div id="main-container" class="container">
-  <div class="row">
-    <div id="sidebar" class="col-xs-3">
-        <%= link_to 'All Posts', controller: 'posts' %>
-        <%= link_to 'New Post', new_post_path %>
+<header>
+    <div class="header-wrapper">
+        <h1>SimpleBlogPlatform</h1>
     </div>
-    <div id="content" class="col-xs-9">
-      <h1>Simple Blog Platform</h1>
+</header>
+
+<nav>
+    <div class="nav-wrapper">
+        <ul class="menu">
+            <li><a href="#">home</a></li>
+            <li><%= link_to 'all', controller: 'posts' %></li>
+            <li><%= link_to 'submit', new_post_path %></li>
+        </ul>
     </div>
-  </div>
-</div>
+</nav>
