@@ -18,6 +18,13 @@
     border-radius: 5px;
 }
 
+#error_message{
+    background-color: #c77287;
+    padding: 10px;
+    border-radius: 5px;
+    color: #f5edf0;
+}
+
 input[type='text']{
     width: 25%;
 }
@@ -25,4 +32,5 @@ input[type='text']{
 textarea{
     width: 100%;
     min-height: 200px;
+    resize: none;
 }
