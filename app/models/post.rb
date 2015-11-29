@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
     validates :text, presence: true, length: { minimum: 2}
 
     def self.search(query)
-        where(:title => query)
+        where("title like ?", "%#{query}%")
     end
 
 end

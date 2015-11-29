@@ -5,9 +5,11 @@
 html, body{
     color: #654e57;
     width: 100%;
+    min-width: 760px;
     height: 100%;
     background-image: url("background.jpg");
-    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1{
@@ -34,11 +36,19 @@ h2{
     opacity: 0.8;
 }
 
+.menu-wrapper{
+    margin-top: 50px;
+}
+
 .nav-wrapper{
     position: relative;
     width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+}
+
+.search-wrapper{
+    position: relative;
+    width: auto;
+    margin-top: 3px;
 }
 
 ul.menu{
